@@ -1,0 +1,21 @@
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include respond-to(lg) {
+    justify-content: space-between;
+  }
+
+  &__container {
+    flex: 0 0 40%;
+    text-align: center;
+    margin: 5%;
+
+    @include respond-to(sm) {
+      flex: 0;
+      margin: 22px;
+      width: 25%;
+    }
+  }
+}

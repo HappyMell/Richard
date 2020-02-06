@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.sub-footer {
+  &__info {
+    padding: 15vh 0;
+    color: #fff;
+    text-align: center;
+    background: rgb(252, 10, 126);
+    background: linear-gradient(
+      135deg,
+      rgba(252, 10, 126, 1) 0%,
+      rgba(96, 43, 182, 1) 100%
+    );
+  }
+  &__display {
+    padding: 20px 0 40px 0;
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+.page-footer {
+  background: #1b1b1b;
+  text-align: center;
+
+  &__container {
+    padding: 20px 5vw 40px 5vw;
+    color: #fff;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  &__form {
+    margin: 40px auto;
+    form {
+      @include respond-to(lg) {
+        display: flex;
+      }
+
+      input {
+        padding: 0 22px;
+        height: 70px;
+        width: 90%;
+        text-align: center;
+
+        @include respond-to(lg) {
+          flex: 0 0 70%;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    padding: 20px 5vw 40px 5vw;
+  }
+
+  &__logo {
+    text-align: center;
+    display: inline-block;
+
+    img {
+      height: 104px;
+    }
+  }
+
+  &__links {
+    padding: 29px 0;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 0 15px 10px 15px;
+        a {
+          color: #6b6b6b;
+        }
+      }
+    }
+  }
+}

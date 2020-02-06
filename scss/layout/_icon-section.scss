@@ -1,0 +1,19 @@
+.main-feature {
+  margin-bottom: 9rem;
+
+  @include respond-to(sm) {
+    display: flex;
+  }
+
+  &__icons {
+    padding-top: 5vh;
+    background: #fff;
+    text-align: left;
+
+    @include respond-to(sm) {
+      padding-top: 0;
+      text-align: center;
+      margin: 0 46px;
+    }
+  }
+}

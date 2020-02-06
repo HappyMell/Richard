@@ -1,0 +1,50 @@
+.main-hero {
+  height: 100vh;
+  display: flex;
+  background: rgb(252, 10, 126);
+  background: linear-gradient(
+    135deg,
+    rgba(252, 10, 126, 1) 0%,
+    rgba(96, 43, 182, 1) 100%
+  );
+
+  &__info {
+    z-index: 13;
+  }
+
+  &__display {
+    margin-top: 108px;
+    width: 100%;
+    @include respond-to(lg) {
+      position: relative;
+      width: 100%;
+      z-index: 3;
+    }
+
+    h1 {
+      font-weight: 700;
+      color: #fff;
+    }
+    h3 {
+      color: #fff;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    @include respond-to(lg) {
+      top: 0;
+      right: 0;
+      z-index: -1;
+      position: absolute;
+    }
+    img {
+      height: 548px;
+
+      @include respond-to(lg) {
+        height: 85vh;
+      }
+    }
+  }
+}

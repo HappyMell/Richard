@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.button {
+  &__small {
+    border: none;
+    background: #fc0a7e;
+    padding: 20px 40px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin: 30px auto;
+    border-radius: 3px;
+    transition: ease-out 0.5s;
+
+    &:hover {
+      background: #fff;
+      color: #6b6b6b;
+      cursor: pointer;
+    }
+  }
+
+  &__large {
+    &--pink {
+      background: #fc0a7e;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 20px 40px;
+      border-radius: 3px;
+      width: 90%;
+      transition: ease-out 0.5s;
+
+      &:hover {
+        background: #fff;
+        color: #6b6b6b;
+        cursor: pointer;
+      }
+    }
+
+    &--clear {
+      margin-top: 10px;
+      background: transparent;
+      border: 1px solid #000;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 20px 40px;
+      border-radius: 3px;
+      width: 90%;
+      transition: ease-out 0.5s;
+      @include respond-to(xsm) {
+        margin-top: 0;
+        margin-left: 10px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        border: 1px #fff solid;
+      }
+    }
+  }
+}
+
+.buttons {
+  @include respond-to(xsm) {
+    display: flex;
+  }
+}
